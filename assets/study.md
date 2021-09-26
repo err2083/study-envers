@@ -153,7 +153,7 @@ select
         and member_his0_.revtype<>?
 ```
 
-![유효성 검사 전략 테이블](./image/ValidityAuditStrategy.png) 유효성 검사 전략 테이블
+![유효성 검사 전략 테이블](./image/validityAuditStrategy.png) 유효성 검사 전략 테이블
 
 ## 1.7 개정 로그
 
@@ -194,7 +194,7 @@ public class CustomRevisionEntityListener implements RevisionListener {
 연관관계의 엔티티가 추적하지 않는 대상이지만 현재 엔티티에서 감사를 하고 싶다면 @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)를, 연관관계 엔티티의 컬럼을 만들고 싶지 않다면 @NotAudited를 추가해주면 됩니다.
 
 ```java
-Entity
+@Entity
 @Getter
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
