@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "name":"apple"
+}
+
+###
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "name":"banana"
+}
+
+###
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "name":"blueberry"
+}

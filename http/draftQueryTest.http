@@ -1,0 +1,17 @@
+###
+POST http://localhost:8080/api/drafts
+Content-Type: application/json
+
+{
+  "column1":"python",
+  "column2":"javascript"
+}
+
+###
+POST http://localhost:8080/api/drafts
+Content-Type: application/json
+
+{
+  "column1":"java",
+  "column2":"cpp"
+}

@@ -1,0 +1,61 @@
+###
+GET http://localhost:8080/api/members/history/rev/3
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://localhost:8080/api/members/history/1
+Content-Type: application/json
+
+{
+}
+
+###
+DELETE http://localhost:8080/api/members/1
+Content-Type: application/json
+
+{
+}
+
+###
+PATCH http://localhost:8080/api/members/1
+Content-Type: application/json
+
+{
+  "profile": {
+    "fun": "marvel"
+  }
+}
+
+###
+GET http://localhost:8080/api/members/1
+Accept: application/json
+
+### member 생성
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "name":"starlight",
+  "profile":{
+    "phoneNumber":"010-0000-0000",
+    "address":"red",
+    "fun":"game"
+  }
+}
+
+### member 생성
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "name":"lunar",
+  "profile":{
+    "phoneNumber":"010-1111-1111",
+    "address":"yellow",
+    "fun":"health"
+  }
+}
+

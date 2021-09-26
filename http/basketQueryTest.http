@@ -1,0 +1,22 @@
+###
+PATCH http://localhost:8080/api/baskets/5
+Content-Type: application/json
+
+{
+  "items":[
+    "http://localhost:8080/api/items/7",
+    "http://localhost:8080/api/items/3"
+  ]
+}
+
+###
+POST http://localhost:8080/api/baskets
+Content-Type: application/json
+
+{
+  "name":"basket1",
+  "items":[
+    "http://localhost:8080/api/items/1",
+    "http://localhost:8080/api/items/3"
+  ]
+}

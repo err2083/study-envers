@@ -1,0 +1,18 @@
+###
+PATCH http://localhost:8080/api/contracts/5
+Content-Type: application/json
+
+{
+  "draft": "http://localhost:8080/api/drafts/4"
+}
+
+###
+POST http://localhost:8080/api/contracts
+Content-Type: application/json
+
+{
+  "column1":"red",
+  "column2":"blue",
+  "draft": "http://localhost:8080/api/drafts/3",
+  "manager": "http://localhost:8080/api/members/1"
+}

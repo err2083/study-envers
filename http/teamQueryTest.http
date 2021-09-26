@@ -1,0 +1,11 @@
+### team 생성
+POST http://localhost:8080/api/teams
+Content-Type: application/json
+
+{
+  "name":"velvet",
+  "members":[
+    "http://localhost:8080/api/members/1",
+    "http://localhost:8080/api/members/3"
+  ]
+}
